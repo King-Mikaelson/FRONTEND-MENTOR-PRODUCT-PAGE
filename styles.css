@@ -1,0 +1,88 @@
+/* --------------*/
+/*General Resets */
+/* --------------*/
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: 'Commissioner', sans-serif;
+}
+
+/* Ressetting margins of elements */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+picture {
+    margin : 0
+}
+
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p{
+   font-weight: 100;
+}
+
+/* Setting up our body */
+body {
+    /* height: 100vh; */
+    background-color:hsl(185, 41%, 84%);
+    font-size: 16px;
+}
+
+/* Making Images easier to easier to style */
+img,
+picture {
+max-width: 100%;
+display: block; 
+}
+
+/* Making forms easier to work with */
+input,
+button,
+text-area,
+select {
+    font : inherit
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Removing list styles on ul,ol elements */
+ul[role = "list"],
+li[role="list"] {
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 1440px;
+}

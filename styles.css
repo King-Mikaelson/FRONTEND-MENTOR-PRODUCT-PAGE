@@ -41,8 +41,8 @@ p{
 /* Setting up our body */
 body {
     /* height: 100vh; */
-    background-color:hsl(185, 41%, 84%);
-    font-size: 16px;
+    background-color: whitesmoke;
+    font-size: 1rem;
 }
 
 /* Making Images easier to easier to style */
@@ -79,10 +79,638 @@ li[role="list"] {
 }
 
 .container {
+    /* display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header header header header"
+                        " ......content1 content1 ...... ,"; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    max-width: 1440px;
+    /* max-width: 1440px; */
 }
+
+
+.heading{
+    background-image: url(images/image-hero-desktop.jpg);
+    width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 4.375rem;
+    padding: 1rem 1.5rem;
+
+}
+
+.hamburger-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.close-button{
+    display: none;
+    cursor: pointer;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.75em;
+}
+
+.nav-item{
+    margin-left: 5rem;
+}
+
+
+
+.nav-links{
+    color: white;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.description{
+    background-color: white;
+    width: 50%;
+    padding: 3rem 4rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    align-self:center;
+    margin-top: -3rem;
+    position: relative;
+}
+
+.description-image{
+    position: absolute;
+    top: -2rem;
+    right: 20rem
+}
+
+.description-test-heading{
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 700;
+}
+
+.description-test{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+}
+
+.description-test-paragraph{
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 500;
+    color: hsl(0, 0%, 48%);
+    padding-bottom: 2rem
+}
+
+.project-bookmarked{
+    display:flex;
+    justify-content: space-between;
+    cursor:pointer;
+}
+
+.project-bookmarked-cta{
+    display:flex;
+    background-color: lightgray;
+    padding: 2px 0px;
+    padding-right: 2rem;
+    border-radius: 2rem;
+}
+
+.project-bookmarked-cta img{
+   width: 3.5rem
+
+}
+
+.project-button{
+    border-radius: 2rem;
+    padding: 2px 25px;
+    background-color: hsl(176, 72%, 28%);
+    color: white;
+    border: 0.5px solid hsl(176, 72%, 28%);
+    cursor: pointer;
+}
+
+.color-change{
+    filter: grayscale(20%) brightness(400%) sepia(100%) hue-rotate(50deg) saturate(100%);
+}
+
+.project-bookmarked-cta-text{
+    padding:16px;
+    color: hsl(0, 0%, 48%);
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 500;
+}
+
+
+.progress{
+    background-color: white;
+    width: 50%;
+    padding: 3rem 4rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    align-self:center;
+    margin-top: 3rem;
+}
+
+.money{
+    display: flex;
+    gap: 4rem
+}
+
+.money-child{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem
+}
+
+.money-amount{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.money-text{
+    color: hsl(0, 0%, 48%);
+    font-weight: 500;
+}
+
+.money-child{
+    position: relative;
+}
+
+.money-child.one .straight-line, .money-child.two .straight-line{
+  border-right: 1px solid lightgray;
+  height: 70px;
+  position:absolute;
+  right: -3rem;
+  bottom: 5px
+
+}
+
+.progress-bar{
+    width: 100%;
+    height: 15px;
+    background-color: lightgray;
+    border-radius: 3rem;
+    margin-top: 2rem;
+}
+
+.progress-line{
+    width: 70%;
+    height:15px;
+    background-color: hsl(176, 72%, 28%);
+    border-radius: 3rem;
+}
+
+.About{
+    background-color: white;
+    /* align-self: center; */
+    width:50%;
+    margin: 3rem auto;
+    padding: 3rem 1.8rem;
+    border-radius: 0.5rem;
+}
+
+.About-heading{
+    font-weight: 700;
+    padding-bottom: 2rem
+}
+
+.About-paragraph{
+    color: hsl(0, 0%, 48%);
+    padding-bottom: 2rem;
+    line-height: 1.6rem;
+}
+
+
+.About-paragraph1{
+    color: hsl(0, 0%, 48%);
+    padding-bottom: 2rem;
+    line-height: 1.6rem;
+    padding-right: -2rem;
+}
+
+.products-container{
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+}
+
+.products{
+    border: 1px solid lightgray;
+    padding: 3rem 1.5rem;
+    border-radius: 0.5rem;
+
+}
+
+.product-header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.product-name{
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 700;
+}
+
+.product-pledge{
+    color: hsl(176, 50%, 47%);
+    font-weight: 500;
+}
+
+.product-paragraph{
+    color: hsl(0, 0%, 48%);
+    font-size: 400;
+    padding-bottom: 2rem;
+    line-height: 1.5rem;
+}
+
+.product-footer{
+    display:flex;
+    justify-content: space-between;
+}
+
+.product-number{
+    color: hsl(0, 0%, 48%);
+}
+
+.product-number-left{
+    font-size: 2rem;
+    color:black;
+    font-weight: 700;
+}
+
+.product-cta{
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background-color: hsl(176, 50%, 47%);
+    border:1px solid  hsl(176, 50%, 47%);
+    color:white;
+    cursor: pointer;
+
+}
+
+.product-cta:hover{
+    background-color: hsl(176, 72%, 28%);
+}
+
+.product-number-left.gray{
+    color: hsl(0, 0%, 48%);
+    
+}
+
+.product-cta.gray{
+    background-color: hsl(0, 0%, 48%);
+    border:1px solid  hsl(0, 0%, 48%);
+}
+
+
+
+
+
+
+
+
+
+
+.inactive{
+    color: hsl(0, 0%, 48%);
+    opacity: 0.5
+}
+
+
+
+
+
+
+
+
+.container-2{
+    position: fixed;
+    z-index:1;
+    padding-top: 5px;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    display:none;
+    overflow: auto;
+}
+
+
+.modal{
+    background-color: white;
+    /* align-self: center; */
+    width: 40%;
+    margin: 3rem auto;
+    height: 53rem;
+    font-size: 12px;
+    padding: 1rem 1.8rem;
+    border-radius: 0.5rem;
+    max-width: 1200px;
+}
+
+.modal-image{
+    width: 0.9rem;
+    height: 0.9rem;
+    position: absolute;
+    right: 0rem;
+    bottom: 1rem
+}
+
+.modal-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.modal-heading{
+    font-weight: 700;
+    margin-bottom: 1rem
+}
+
+.modal-paragraph{
+    color: hsl(0, 0%, 48%);
+    margin-bottom: 0.5rem;
+}
+
+
+.modal-products-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 15rem;
+}
+
+.modal-products{
+    border: 1px solid hsl(0, 0%, 48%);
+    padding: 2rem 1.5rem;
+    border-radius: 0.5rem;
+    height: 12rem;
+    font-size: 12px;
+
+}
+
+
+.modal-products:hover{
+    border: 1px solid hsl(176, 50%, 47%);
+
+}
+
+
+.modal-products.active{
+    border: 1px solid hsl(176, 50%, 47%);
+}
+
+
+.product-header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+}
+
+
+.product-header-one{
+    display: flex;
+    justify-content: space-between;
+    gap:2rem
+}
+
+.modal-circle-body{
+    width: 1rem;
+    height: 15px;
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 48%);
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.modal-circle{
+    width: 0.5rem;
+    height: 9px;
+    background-color: hsl(176, 50%, 47%);
+    border: 1px solid hsl(0, 0%, 48%);
+    border-radius: 1rem;
+    margin: 0.05rem auto;
+    /* checkbox JS */
+    display:none
+}
+
+
+.modal-products.active .modal-circle{
+    display: block
+}
+
+.modal-product-name{
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 700;
+}
+
+
+.product-modal-number-left{
+    font-size: 1rem;
+    color:black;
+    font-weight: 700;
+}
+
+.product-pledge{
+    color: hsl(176, 50%, 47%);
+    font-weight: 500;
+}
+
+.modal-paragraph{
+    color: hsl(0, 0%, 48%);
+    font-size: 400;
+    padding-bottom: 0rem;
+    line-height: 1.5rem;
+}
+
+
+.display-modal{
+    /* input JS */
+    display: none;
+    margin: 1rem 0;
+}
+
+.modal-products.active .display-modal{
+    display:block;
+}
+
+.horizontal-line{
+    border-top: 1px solid lightgray;
+    width: 35.5%;
+    height: 0px;
+    position:absolute;
+    right: 26.9rem;
+    margin: 0 auto;
+    /* bottom: -30px */
+  
+  }
+
+
+.enter-pledge{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0.1rem;
+}
+
+.input-text{
+    position: relative;
+}
+
+.dollar-input{
+    position: absolute;
+    bottom: 0.9rem;
+    left: 1rem
+}
+
+
+
+
+.input-submit{
+    display: flex;
+    gap:1rem;
+}
+
+
+.input-box{
+    width: 5rem;
+    padding: 0.6rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid hsl(0, 0%, 48%);
+    outline:none
+
+}
+
+.input-button{
+    width: 5rem;
+    padding: 0.6rem 0.5rem;
+    border-radius:2rem;
+    background-color: hsl(176, 50%, 47%);
+    color: white;
+    border: 1px solid hsl(176, 50%, 47%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+    .container{
+        position: relative;
+        z-index: 0
+    }
+    .heading{
+        height: 32.5vh;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+
+    .hamburger-menu.active .close-button{
+        display:block
+    }
+
+    .hamburger-menu.active .menu{
+        display:none
+    }
+
+    .nav-menu{
+        position:fixed;
+        top: -100%;
+        left:0;
+        gap:0;
+        flex-direction: column;
+        background-color: whitesmoke;
+        width: 90%;
+        text-align: center;
+        transition: 0.3s;
+        border-radius: 0.5rem;
+        margin-left: 1rem;
+        z-index: 1
+    }
+
+    .nav-links{
+        color:black;
+    }
+
+    .nav-items{
+        margin:16px 0
+    }
+
+    .nav-menu.active{
+        top: 4rem
+    }
+
+    .description{
+        z-index: 0
+    }
+
+    .money{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+
+
+    .money-child.one .straight-line, .money-child.two .straight-line{
+        border-top: 1px solid lightgray;
+        width: 85%;
+        height: 0px;
+        position:absolute;
+        right: 0rem;
+        bottom: -30px
+      
+      }
+
+}
+

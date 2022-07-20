@@ -561,12 +561,16 @@ a {
 .display-modal {
     /* input JS */
     display: none;
-    margin: 1rem 0;
+    margin: 0rem 0;
+    width:100%;
     position: relative;
+    transform:translateY(-900%);
 }
 
 .modal-products.active .display-modal {
     display: block;
+    transform:translateY(0);
+    transition:all 3s linear
 }
 
 .horizontal-line {
@@ -801,7 +805,7 @@ a {
 
 
     .nav-menu.active {
-        top: 5rem
+        top: 6rem
     }
 
 

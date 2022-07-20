@@ -181,7 +181,12 @@ bookmarked.addEventListener("click", () => {
 
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active")
+    navMenu.classList.toggle("active");
+    if(navMenu.classList.contains("active")){
+    document.body.style.overflowY = "hidden"
+    }else{
+        document.body.style.overflowY = ""
+    }
 })
 
 OpenProject.addEventListener("click", () => {

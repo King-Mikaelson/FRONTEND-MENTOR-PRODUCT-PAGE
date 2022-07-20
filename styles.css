@@ -735,9 +735,11 @@ a {
 
 @media(max-width:768px) {
 
+
     .heading {
         background-image: url(images/image-hero-mobile.jpg);
         height: 100vh;
+        position: relative;
     }
 
     .container {
@@ -761,6 +763,7 @@ a {
         display: none
     }
 
+
     .nav-menu {
         position: fixed;
         top: -100%;
@@ -773,8 +776,15 @@ a {
         transition: 0.3s;
         border-radius: 0.5rem;
         margin: 0 1rem;
-        z-index: 1
+        z-index: 1;
+        overflow: hidden;
+}
     }
+
+   .nav-menu.active {
+        top: 6rem;
+    }
+
 
     .nav-links {
         color: black;
@@ -804,10 +814,7 @@ a {
 
 
 
-    .nav-menu.active {
-        top: 6rem
-    }
-
+ 
 
     .description {
         width: 80%;
